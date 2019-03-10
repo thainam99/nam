@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-06 09:20:11 PM"/>
+        <attribute name="created" value="QWRtaW47REVTS1RPUC1TTE5EREhPOzIwMTktMDMtMDQ7MDk6NTg6MTkgUE07Mjg5MQ=="/>
+        <attribute name="edited" value="QWRtaW47REVTS1RPUC1TTE5EREhPOzIwMTktMDMtMDY7MDk6MjA6MTEgUE07MjsyOTgz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Real" array="False" size=""/>
+            <declare name="b" type="Real" array="False" size=""/>
+            <declare name="c" type="Real" array="False" size=""/>
+            <declare name="x1" type="Real" array="False" size=""/>
+            <declare name="x2" type="Real" array="False" size=""/>
+            <declare name="dt" type="Real" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <if expression="a!=0">
+                <then>
+                    <assign variable="dt" expression="b*b-(4*a*c)"/>
+                    <if expression="dt&gt;=0">
+                        <then>
+                            <if expression="dt&gt;0">
+                                <then>
+                                    <assign variable="x1" expression="(-b-sqrt(dt))/2*a"/>
+                                    <assign variable="x2" expression="(-b+sqrt(dt))/2*a"/>
+                                    <output expression="&quot;x1=&quot;&amp;x1" newline="True"/>
+                                    <output expression="&quot;x2=&quot;&amp;x2" newline="True"/>
+                                </then>
+                                <else>
+                                    <assign variable="x1" expression="-b/(2*a)"/>
+                                    <output expression="&quot;x1=&quot;&amp;x1" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;ptvn&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="b=0">
+                        <then>
+                            <output expression="&quot;ptvn&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <assign variable="x1" expression="-c/b"/>
+                            <output expression="&quot;x1=&quot;&amp;x1" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

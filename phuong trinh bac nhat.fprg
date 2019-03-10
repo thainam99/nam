@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-06 09:26:13 PM"/>
+        <attribute name="created" value="QWRtaW47REVTS1RPUC1TTE5EREhPOzIwMTktMDMtMDQ7MDg6NDk6NDIgUE07Mjg4Ng=="/>
+        <attribute name="edited" value="QWRtaW47REVTS1RPUC1TTE5EREhPOzIwMTktMDMtMDY7MDk6MjY6MTMgUE07NDsyOTkz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Real" array="False" size=""/>
+            <declare name="b" type="Real" array="False" size=""/>
+            <declare name="x" type="Real" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <if expression="a=0">
+                <then>
+                    <output expression="&quot;pt vn&quot;" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="x" expression="-b/a"/>
+                    <output expression="&quot;x=&quot;&amp;x" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
