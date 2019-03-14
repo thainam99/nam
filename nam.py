@@ -1,0 +1,5 @@
+print("hello,world")
+print("Ho ten: Thai Phuong Nam")
+print("MSSV:1755251030100045")
+print("Ngay sinh:04/04/1999")
+print("nganh hoc: CNKT Dien,dien tu")
